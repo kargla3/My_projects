@@ -1,0 +1,129 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [
+        {
+          "ruleId": "C6384",
+          "message": {
+            "text": "Dzielenie wyniku funkcji sizeof na wskaźniku przez inną wartość."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Karoo/OneDrive/Pulpit/projekty/Sklep/Sklep/funkcje.cpp"
+                },
+                "region": {
+                  "startLine": 172,
+                  "startColumn": 13,
+                  "endLine": 172,
+                  "endColumn": 20
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "odczyt_kas",
+                  "decoratedName": "?odczyt_kas@@YAXV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAVKasa@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.34.31937.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///C:/Users/Karoo/OneDrive/Pulpit/projekty/Sklep/Sklep/funkcje.cpp"
+          },
+          "roles": [
+            "analysisTarget",
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "3daa329c8d811e7917b751b15353584917500504aa0d565600c07f2311fac989"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/karoo/onedrive/pulpit/projekty/sklep/sklep/funkcje.h"
+          },
+          "hashes": {
+            "sha-256": "6dd36bf9d3dd507ec4a2d521e6c8291610f3726660e769d34110036570949e11"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/karoo/onedrive/pulpit/projekty/sklep/sklep/uzytkownik.h"
+          },
+          "hashes": {
+            "sha-256": "2d90f34a1575d0c9c27f247904d50aa7e5d94968dbb9553c282fea60c57baf86"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/karoo/onedrive/pulpit/projekty/sklep/sklep/produkt.h"
+          },
+          "hashes": {
+            "sha-256": "49214fc335eb73dfd3d66547d1e6ca0e2048aa0f4d8776cfd633eb05bfa09f6d"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/karoo/onedrive/pulpit/projekty/sklep/sklep/produkt_na_ilosc.h"
+          },
+          "hashes": {
+            "sha-256": "235ce64ce24f75841ef36e3bcad9eb176234336d2446607aae6d3c2093c06251"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/karoo/onedrive/pulpit/projekty/sklep/sklep/produkt_na_wage.h"
+          },
+          "hashes": {
+            "sha-256": "a0c5bde0270535d8ab666f56385da3d7173db4a3b56e248b5b3d126ef875a72c"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/karoo/onedrive/pulpit/projekty/sklep/sklep/kasa.h"
+          },
+          "hashes": {
+            "sha-256": "d0e9dc12a39c3ac0c5daa059b88cbac77962f40f6826a8f8bd71fcdcf870cc3e"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/karoo/onedrive/pulpit/projekty/sklep/sklep/administrator.h"
+          },
+          "hashes": {
+            "sha-256": "f4f16d9f1c6e44618301c980980a545ea3e831a07bd0a0ccefdaa930a8c1187e"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/karoo/onedrive/pulpit/projekty/sklep/sklep/kasjer.h"
+          },
+          "hashes": {
+            "sha-256": "0db9f74ef96c5a4ebdbe5424ab4305afbd26b1d273a19df4366d8705f291e6f2"
+          }
+        }
+      ]
+    }
+  ]
+}

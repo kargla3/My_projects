@@ -1,0 +1,2 @@
+administrator admin 1234
+kasjer kasjer 2023

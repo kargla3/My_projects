@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DEFECTS>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\Karoo\OneDrive\Pulpit\projekty\Sklep\Sklep\</FILEPATH>
+      <FILENAME>funkcje.cpp</FILENAME>
+      <LINE>172</LINE>
+      <COLUMN>12</COLUMN>
+    </SFA>
+    <DEFECTCODE>6384</DEFECTCODE>
+    <DESCRIPTION>Dzielenie wyniku funkcji sizeof na wskaźniku przez inną wartość.</DESCRIPTION>
+    <FUNCTION>odczyt_kas</FUNCTION>
+    <DECORATED>?odczyt_kas@@YAXV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAVKasa@@@Z</DECORATED>
+    <FUNCLINE>162</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+</DEFECTS>

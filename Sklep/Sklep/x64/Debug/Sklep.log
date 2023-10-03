@@ -1,0 +1,4 @@
+﻿  Kasa.cpp
+C:\Users\Karoo\OneDrive\Pulpit\projekty\Sklep\Sklep\Kasa.cpp(181,13): warning C4244: "inicjowanie": konwersja z "double" do "int", możliwa utrata danych
+C:\Users\Karoo\OneDrive\Pulpit\projekty\Sklep\Sklep\Kasa.cpp(216,21): warning C4244: "inicjowanie": konwersja z "double" do "int", możliwa utrata danych
+  Sklep.vcxproj -> C:\Users\Karoo\OneDrive\Pulpit\projekty\Sklep\x64\Debug\Sklep.exe
