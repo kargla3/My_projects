@@ -1,0 +1,51 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.34.31937.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///c:/users/karoo/onedrive/pulpit/projekty/tuc/tuc/tuc.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "sha-256": "0c11c2f92dc3e84ef64fa407a40e23c0dee45a02d460ee50772c1dfad2153dd7"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/karoo/onedrive/pulpit/projekty/tuc/tuc/funkcje.h"
+          },
+          "hashes": {
+            "sha-256": "15d590b8ea272be0b14e6976a12d9e2cf9edad808d9ecd7ac02ede4931180c8a"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/karoo/onedrive/pulpit/projekty/tuc/tuc/struktury.h"
+          },
+          "hashes": {
+            "sha-256": "17d7052a5f55bdea4a94f821033cfa16fd1f2605f47893bb358f0f7f8234a083"
+          }
+        }
+      ]
+    }
+  ]
+}
