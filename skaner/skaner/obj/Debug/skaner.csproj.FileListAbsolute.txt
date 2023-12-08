@@ -1,0 +1,12 @@
+C:\Users\Karoo\OneDrive\Pulpit\projekty\skaner\skaner\bin\Debug\skaner.exe.config
+C:\Users\Karoo\OneDrive\Pulpit\projekty\skaner\skaner\bin\Debug\skaner.exe
+C:\Users\Karoo\OneDrive\Pulpit\projekty\skaner\skaner\bin\Debug\skaner.pdb
+C:\Users\Karoo\OneDrive\Pulpit\projekty\skaner\skaner\obj\Debug\skaner.csproj.AssemblyReference.cache
+C:\Users\Karoo\OneDrive\Pulpit\projekty\skaner\skaner\obj\Debug\skaner.csproj.SuggestedBindingRedirects.cache
+C:\Users\Karoo\OneDrive\Pulpit\projekty\skaner\skaner\obj\Debug\skaner.Form1.resources
+C:\Users\Karoo\OneDrive\Pulpit\projekty\skaner\skaner\obj\Debug\skaner.Properties.Resources.resources
+C:\Users\Karoo\OneDrive\Pulpit\projekty\skaner\skaner\obj\Debug\skaner.csproj.GenerateResource.cache
+C:\Users\Karoo\OneDrive\Pulpit\projekty\skaner\skaner\obj\Debug\skaner.csproj.CoreCompileInputs.cache
+C:\Users\Karoo\OneDrive\Pulpit\projekty\skaner\skaner\obj\Debug\skaner.exe
+C:\Users\Karoo\OneDrive\Pulpit\projekty\skaner\skaner\obj\Debug\skaner.pdb
+C:\Users\Karoo\OneDrive\Pulpit\projekty\skaner\skaner\obj\Debug\skaner.Form2.resources
