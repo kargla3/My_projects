@@ -1,0 +1,51 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.34.31937.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///c:/users/karoo/onedrive/pulpit/projekty/kantor/kantor/cash_register.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "sha-256": "864011338f9eca871243870b412c5fa70d591f4d18d0f07a20b9a570f362ee42"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/karoo/onedrive/pulpit/projekty/kantor/kantor/cash_register.h"
+          },
+          "hashes": {
+            "sha-256": "bbe6d30db4e672d27d0cf29f92eefc70c8365ec02c09602a0a4e448be05d239d"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/karoo/onedrive/pulpit/projekty/kantor/kantor/currency.h"
+          },
+          "hashes": {
+            "sha-256": "a3bcc4a6698f86940ad968104600c6a5c52eab56d809cb6d9c10bf3e903fd7da"
+          }
+        }
+      ]
+    }
+  ]
+}

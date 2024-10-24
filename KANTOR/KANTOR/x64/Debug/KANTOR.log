@@ -1,0 +1,3 @@
+﻿  Cash_register.cpp
+C:\Users\Karoo\OneDrive\Pulpit\projekty\KANTOR\KANTOR\Cash_register.cpp(56,31): warning C4267: "inicjowanie": konwersja z "size_t" do "int", możliwa utrata danych
+  KANTOR.vcxproj -> C:\Users\Karoo\OneDrive\Pulpit\projekty\KANTOR\x64\Debug\KANTOR.exe
