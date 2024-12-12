@@ -1,4 +1,10 @@
+<<<<<<< HEAD
 pl\polsl\Głąbik\model\GraphTest.class
 pl\polsl\Głąbik\model\VerticeTest.class
 pl\polsl\Głąbik\model\PathTest.class
 pl\polsl\Głąbik\model\FloydWarshallTest.class
+=======
+pl\polsl\Głąbik\model\PathTest.class
+pl\polsl\Głąbik\model\FloydWarshallTest.class
+pl\polsl\Głąbik\model\GraphTest.class
+>>>>>>> d298b6d0eaaada2ef2cf83280113d80212c98ba5

@@ -22,6 +22,16 @@ public class FloydWarshall {
     private final GraphInterface graph;
 
     /**
+<<<<<<< HEAD
+=======
+     * Represents an instance of Graph class.
+     *
+     * All operations are made on this object.
+     */
+    //private Graph graph;
+
+    /**
+>>>>>>> d298b6d0eaaada2ef2cf83280113d80212c98ba5
      * Constructs a {@code FloydWarshall} instance for a graph with a given
      * number of vertices.
      *
@@ -69,11 +79,15 @@ public class FloydWarshall {
     }
 
     public void editDistance(int start, int end, int cost) {
+<<<<<<< HEAD
         if(cost >= 0)
             graph.getDist().get(start).set(end, cost);
         else {
             throw new NumberFormatException("Cost must be a positive number");
         }
+=======
+        graph.getDist().get(start).set(end, cost);
+>>>>>>> d298b6d0eaaada2ef2cf83280113d80212c98ba5
     }
 
     /**

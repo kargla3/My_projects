@@ -14,6 +14,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 /**
+<<<<<<< HEAD
  * Class for testing the implementation of the Floyd-Warshall algorithm.
  * Includes tests for distance initialization, distance editing, and the main
  * algorithm.
@@ -41,6 +42,20 @@ public class FloydWarshallTest {
      * Constructor to initialize test data, including vertices, paths, and
      * distance matrices.
      */
+=======
+ *
+ * @author Karoo
+ */
+public class FloydWarshallTest {
+
+    List<Vertice> vertices;
+    List<Path> paths;
+    List<List<Integer>> dist;
+    List<List<Integer>> distAfter;
+    
+    FloydWarshall fw;
+
+>>>>>>> d298b6d0eaaada2ef2cf83280113d80212c98ba5
     public FloydWarshallTest() {
         vertices = Arrays.asList(new Vertice(1), new Vertice(2), new Vertice(3));
         paths = Arrays.asList(
@@ -53,7 +68,11 @@ public class FloydWarshallTest {
                 Arrays.asList(Integer.MAX_VALUE, 0, 10),
                 Arrays.asList(Integer.MAX_VALUE, Integer.MAX_VALUE, 0)
         );
+<<<<<<< HEAD
 
+=======
+        
+>>>>>>> d298b6d0eaaada2ef2cf83280113d80212c98ba5
         distAfter = Arrays.asList(
                 Arrays.asList(0, 5, 15),
                 Arrays.asList(Integer.MAX_VALUE, 0, 10),
@@ -61,27 +80,37 @@ public class FloydWarshallTest {
         );
     }
 
+<<<<<<< HEAD
     /**
      * Set up a fresh instance of the Floyd-Warshall algorithm before each test.
      */
+=======
+>>>>>>> d298b6d0eaaada2ef2cf83280113d80212c98ba5
     @BeforeEach
     public void setUp() {
         GraphInterface graph = new MockGraph(dist, paths, vertices);
         fw = new FloydWarshall(graph, 3);
     }
 
+<<<<<<< HEAD
     /**
      * Clean up resources after each test by nullifying the Floyd-Warshall
      * instance.
      */
+=======
+>>>>>>> d298b6d0eaaada2ef2cf83280113d80212c98ba5
     @AfterEach
     public void tearDown() {
         fw = null;
     }
 
     /**
+<<<<<<< HEAD
      * Test the initialization of distances in the graph's distance matrix.
      * Verifies that the distance matrix matches the predefined values.
+=======
+     * Test of initializeDistances method, of class FloydWarshall.
+>>>>>>> d298b6d0eaaada2ef2cf83280113d80212c98ba5
      */
     @Test
     public void testInitializeDistances() {
@@ -90,6 +119,7 @@ public class FloydWarshallTest {
     }
 
     /**
+<<<<<<< HEAD
      * Test the editing of distances in the graph's distance matrix. Includes
      * both valid and invalid inputs (e.g., negative costs).
      */
@@ -120,6 +150,21 @@ public class FloydWarshallTest {
     /**
      * Test the main Floyd-Warshall algorithm. Verifies that the final distance
      * matrix matches the expected results.
+=======
+     * Test of editDistance method, of class FloydWarshall.
+     */
+    @Test
+    public void testEditDistance() {
+        int start = 0;
+        int end = 0;
+        int cost = 0;
+        fw.editDistance(start, end, cost);
+        assertEquals(fw.getGraph().getDist().get(end).get(start), 0, "Distances should be equal");
+    }
+
+    /**
+     * Test of floydWarshallAlgorithm method, of class FloydWarshall.
+>>>>>>> d298b6d0eaaada2ef2cf83280113d80212c98ba5
      */
     @Test
     public void testFloydWarshallAlgorithm() {

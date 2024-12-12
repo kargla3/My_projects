@@ -6,6 +6,7 @@ package pl.polsl.Głąbik.model;
 import java.util.List;
 
 /**
+<<<<<<< HEAD
  * Interface representing the basic structure of a graph, enabling management of vertices, edges, and their costs.
  * Defines operations such as adding, removing, retrieving, and modifying graph elements.
  * 
@@ -103,6 +104,24 @@ public interface GraphInterface {
      * 
      * @return a {@code String} representing the graph's state.
      */
+=======
+ *
+ * @author Karoo
+ */
+public interface GraphInterface {
+    List<Vertice> getVertices();
+    List<Path> getPaths();
+    List<List<Integer>> getDist();
+    PathDirectionManager getPathDirection();
+    void setVertices(List<Vertice> vertices);
+    void setPaths(List<Path> paths);
+    void setDist(List<List<Integer>> dist);
+    void setPathDirection(PathDirectionManager pathDirection);
+    void addVertice(Vertice vertice);
+    void addPath(Vertice start, Vertice end, int cost) throws NumberFormatException;
+    void removePath(int start, int end);
+    void removeAll();
+>>>>>>> d298b6d0eaaada2ef2cf83280113d80212c98ba5
     @Override
     String toString();
 }

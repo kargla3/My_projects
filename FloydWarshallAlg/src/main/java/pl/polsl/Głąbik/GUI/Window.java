@@ -366,9 +366,15 @@ public class Window extends javax.swing.JFrame {
      */
     private void setVerticesNum() {
         try {
+<<<<<<< HEAD
             BaseGraph graph = new Graph();
             int number = Integer.parseInt(t1.getText());
             floydWarshall = new FloydWarshall((Graph) graph, number);
+=======
+            Graph graph = new Graph();
+            int number = Integer.parseInt(t1.getText());
+            floydWarshall = new FloydWarshall(graph, number);
+>>>>>>> d298b6d0eaaada2ef2cf83280113d80212c98ba5
 
             Vertice[] vertices = new Vertice[number];
             for (int i = 0; i < number; i++) {

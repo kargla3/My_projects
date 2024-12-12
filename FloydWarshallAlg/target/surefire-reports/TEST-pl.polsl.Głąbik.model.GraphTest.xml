@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="pl.polsl.Głąbik.model.GraphTest" time="0.199" tests="5" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="21"/>
+=======
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="pl.polsl.Głąbik.model.GraphTest" time="0.16" tests="5" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="19"/>
+>>>>>>> d298b6d0eaaada2ef2cf83280113d80212c98ba5
     <property name="sun.cpu.isalist" value="amd64"/>
     <property name="sun.jnu.encoding" value="Cp1250"/>
     <property name="java.class.path" value="C:\Users\Karoo\Robocze\FloydWarshallAlg\target\test-classes;C:\Users\Karoo\Robocze\FloydWarshallAlg\target\classes;C:\Users\Karoo\.m2\repository\org\projectlombok\lombok\1.18.34\lombok-1.18.34.jar;C:\Users\Karoo\.m2\repository\org\junit\jupiter\junit-jupiter\5.10.2\junit-jupiter-5.10.2.jar;C:\Users\Karoo\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.2\junit-jupiter-api-5.10.2.jar;C:\Users\Karoo\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\Karoo\.m2\repository\org\junit\platform\junit-platform-commons\1.10.2\junit-platform-commons-1.10.2.jar;C:\Users\Karoo\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.10.2\junit-jupiter-params-5.10.2.jar;C:\Users\Karoo\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\Karoo\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.2\junit-jupiter-engine-5.10.2.jar;C:\Users\Karoo\.m2\repository\org\junit\platform\junit-platform-engine\1.10.2\junit-platform-engine-1.10.2.jar;"/>
@@ -10,12 +16,21 @@
     <property name="user.variant" value=""/>
     <property name="java.vendor.url" value="https://java.oracle.com/"/>
     <property name="user.timezone" value="Europe/Warsaw"/>
+<<<<<<< HEAD
     <property name="os.name" value="Windows 11"/>
     <property name="java.vm.specification.version" value="21"/>
     <property name="user.country" value="PL"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-21\bin"/>
     <property name="sun.java.command" value="C:\Users\Karoo\AppData\Local\Temp\surefire6019092246951223047\surefirebooter-20241209214408677_3.jar C:\Users\Karoo\AppData\Local\Temp\surefire6019092246951223047 2024-12-09T21-44-08_450-jvmRun1 surefire-20241209214408677_1tmp surefire_0-20241209214408677_2tmp"/>
+=======
+    <property name="os.name" value="Windows 10"/>
+    <property name="java.vm.specification.version" value="19"/>
+    <property name="user.country" value="PL"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-19\bin"/>
+    <property name="sun.java.command" value="C:\Users\Karoo\AppData\Local\Temp\surefire8076269676384362221\surefirebooter-20241208202049409_3.jar C:\Users\Karoo\AppData\Local\Temp\surefire8076269676384362221 2024-12-08T20-20-49_213-jvmRun1 surefire-20241208202049409_1tmp surefire_0-20241208202049409_2tmp"/>
+>>>>>>> d298b6d0eaaada2ef2cf83280113d80212c98ba5
     <property name="jdk.debug" value="release"/>
     <property name="test" value="pl.polsl.Głąbik.model.GraphTest"/>
     <property name="surefire.test.class.path" value="C:\Users\Karoo\Robocze\FloydWarshallAlg\target\test-classes;C:\Users\Karoo\Robocze\FloydWarshallAlg\target\classes;C:\Users\Karoo\.m2\repository\org\projectlombok\lombok\1.18.34\lombok-1.18.34.jar;C:\Users\Karoo\.m2\repository\org\junit\jupiter\junit-jupiter\5.10.2\junit-jupiter-5.10.2.jar;C:\Users\Karoo\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.2\junit-jupiter-api-5.10.2.jar;C:\Users\Karoo\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\Karoo\.m2\repository\org\junit\platform\junit-platform-commons\1.10.2\junit-platform-commons-1.10.2.jar;C:\Users\Karoo\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.10.2\junit-jupiter-params-5.10.2.jar;C:\Users\Karoo\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\Karoo\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.2\junit-jupiter-engine-5.10.2.jar;C:\Users\Karoo\.m2\repository\org\junit\platform\junit-platform-engine\1.10.2\junit-platform-engine-1.10.2.jar;"/>
@@ -23,18 +38,30 @@
     <property name="user.home" value="C:\Users\Karoo"/>
     <property name="user.language" value="pl"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
+<<<<<<< HEAD
     <property name="java.version.date" value="2024-10-15"/>
     <property name="java.home" value="C:\Program Files\Java\jdk-21"/>
+=======
+    <property name="java.version.date" value="2022-10-18"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-19"/>
+>>>>>>> d298b6d0eaaada2ef2cf83280113d80212c98ba5
     <property name="file.separator" value="\"/>
     <property name="basedir" value="C:\Users\Karoo\Robocze\FloydWarshallAlg"/>
     <property name="java.vm.compressedOopsMode" value="Zero based"/>
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
+<<<<<<< HEAD
     <property name="surefire.real.class.path" value="C:\Users\Karoo\AppData\Local\Temp\surefire6019092246951223047\surefirebooter-20241209214408677_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="21.0.5+9-LTS-239"/>
+=======
+    <property name="surefire.real.class.path" value="C:\Users\Karoo\AppData\Local\Temp\surefire8076269676384362221\surefirebooter-20241208202049409_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="19.0.1+10-21"/>
+>>>>>>> d298b6d0eaaada2ef2cf83280113d80212c98ba5
     <property name="user.name" value="Karoo"/>
     <property name="stdout.encoding" value="Cp1250"/>
     <property name="path.separator" value=";"/>
@@ -46,12 +73,17 @@
     <property name="localRepository" value="C:\Users\Karoo\.m2\repository"/>
     <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
     <property name="java.io.tmpdir" value="C:\Users\Karoo\AppData\Local\Temp\"/>
+<<<<<<< HEAD
     <property name="java.version" value="21.0.5"/>
+=======
+    <property name="java.version" value="19.0.1"/>
+>>>>>>> d298b6d0eaaada2ef2cf83280113d80212c98ba5
     <property name="user.dir" value="C:\Users\Karoo\Robocze\FloydWarshallAlg"/>
     <property name="os.arch" value="amd64"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="sun.os.patch.level" value=""/>
     <property name="native.encoding" value="Cp1250"/>
+<<<<<<< HEAD
     <property name="java.library.path" value="C:\Program Files\Java\jdk-21\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C;C:\Program Files\Git\cmd;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Program Files\dotnet\;C:\Ruby33-x64\bin;C:\Users\Karoo\AppData\Local\Microsoft\WindowsApps;C:\Users\Karoo\.dotnet\tools;C:\Users\Karoo\AppData\Local\Programs\Microsoft VS Code\bin;."/>
     <property name="java.vm.info" value="mixed mode, sharing"/>
     <property name="stderr.encoding" value="Cp1250"/>
@@ -65,4 +97,19 @@
   <testcase name="testRemovePath" classname="pl.polsl.Głąbik.model.GraphTest" time="0.013"/>
   <testcase name="testAddVertice" classname="pl.polsl.Głąbik.model.GraphTest" time="0.003"/>
   <testcase name="testRemoveAll" classname="pl.polsl.Głąbik.model.GraphTest" time="0.003"/>
+=======
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-19\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\java8path;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;G:\Quicktime\QTSystem\;C:\mingw64;C:\mingw64\bin;C:\Program Files\dotnet\;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Program Files\Git\cmd;C:\Ruby33-x64\bin;C:\Users\Karoo\AppData\Local\Microsoft\WindowsApps;C:\Users\Karoo\.dotnet\tools;C:\Users\Karoo\AppData\Local\Programs\Microsoft VS Code\bin;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="Cp1250"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="19.0.1+10-21"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="63.0"/>
+  </properties>
+  <testcase name="testAddPath" classname="pl.polsl.Głąbik.model.GraphTest" time="0.081"/>
+  <testcase name="testToString" classname="pl.polsl.Głąbik.model.GraphTest" time="0.018"/>
+  <testcase name="testRemovePath" classname="pl.polsl.Głąbik.model.GraphTest" time="0.009"/>
+  <testcase name="testAddVertice" classname="pl.polsl.Głąbik.model.GraphTest" time="0.002"/>
+  <testcase name="testRemoveAll" classname="pl.polsl.Głąbik.model.GraphTest" time="0.001"/>
+>>>>>>> d298b6d0eaaada2ef2cf83280113d80212c98ba5
 </testsuite>

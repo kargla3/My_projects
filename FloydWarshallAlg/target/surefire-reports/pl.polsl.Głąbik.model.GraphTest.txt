@@ -1,4 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: pl.polsl.Głąbik.model.GraphTest
 -------------------------------------------------------------------------------
+<<<<<<< HEAD
 Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.199 s -- in pl.polsl.Głąbik.model.GraphTest
+=======
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.160 s -- in pl.polsl.Głąbik.model.GraphTest
+>>>>>>> d298b6d0eaaada2ef2cf83280113d80212c98ba5

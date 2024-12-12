@@ -50,7 +50,10 @@ public class Graph extends BaseGraph implements GraphInterface {
      * This method provides adding new vertex to list
      *
      * @param vertice vertex added to list of vertices
+<<<<<<< HEAD
      * @throws NumberFormatException if vertex provided by user is null or negative number.
+=======
+>>>>>>> d298b6d0eaaada2ef2cf83280113d80212c98ba5
      */
     @Override
     public void addVertice(Vertice vertice) throws NumberFormatException { //adding vertice to array
@@ -72,7 +75,11 @@ public class Graph extends BaseGraph implements GraphInterface {
      * @param start starting vertex of path
      * @param end ending vertex of path
      * @param cost path cost
+<<<<<<< HEAD
      * @throws NumberFormatException if there is invalid vertex provided by user
+=======
+     * @throws Exception if there is invalid vertex provided by user
+>>>>>>> d298b6d0eaaada2ef2cf83280113d80212c98ba5
      */
     @Override
     public void addPath(Vertice start, Vertice end, int cost) throws NumberFormatException { //addding path to array
@@ -98,7 +105,10 @@ public class Graph extends BaseGraph implements GraphInterface {
      *
      * @param start the ID of the starting vertex of the path to be removed
      * @param end the ID of the ending vertex of the path to be removed
+<<<<<<< HEAD
      * @throws IllegalArgumentException if path provided by user does not exists
+=======
+>>>>>>> d298b6d0eaaada2ef2cf83280113d80212c98ba5
      */
     @Override
     public void removePath(int start, int end) {
