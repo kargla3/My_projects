@@ -1,3 +1,114 @@
 ﻿  Trwa skanowanie źródeł pod kątem zależności modułów...
+  Paths.ixx
+  Trwa kompilowanie…
+  Paths.ixx
+C:\Users\Karoo\My_projects\IcyTowerGame\Paths.ixx(3,10): warning C5244: Dyrektywa '#include <string>' w obszarze modułu 'Paths' wydaje się być błędna.  Rozważ przeniesienie tej dyrektywy przed deklaracją modułu lub zastąp dołączenie tekstowe opcją "import <string>;".
+      C:\Users\Karoo\My_projects\IcyTowerGame\Paths.ixx(1,8):
+      zobacz deklarację modułu "Paths"
+  
+  Coin.cpp
+C:\Users\Karoo\My_projects\IcyTowerGame\Coin.cpp(7,23): warning C4244: "argument": konwersja z "int" do "float", możliwa utrata danych
+C:\Users\Karoo\My_projects\IcyTowerGame\Coin.cpp(7,20): warning C4244: "argument": konwersja z "int" do "float", możliwa utrata danych
+C:\Users\Karoo\My_projects\IcyTowerGame\Coin.cpp(8,22): warning C4305: "argument": obcięcie z "double" do "float"
+C:\Users\Karoo\My_projects\IcyTowerGame\Coin.cpp(8,17): warning C4305: "argument": obcięcie z "double" do "float"
+C:\Users\Karoo\My_projects\IcyTowerGame\Coin.cpp(13,8): warning C4244: "inicjowanie": konwersja z "float" do "int", możliwa utrata danych
+  Display.cpp
+C:\Users\Karoo\My_projects\IcyTowerGame\Display.cpp(102,25): warning C4305: "argument": obcięcie z "double" do "float"
+C:\Users\Karoo\My_projects\IcyTowerGame\Display.cpp(105,26): warning C4305: "argument": obcięcie z "double" do "float"
   IcyTowerGame.cpp
-  IcyTowerGame.vcxproj -> C:\Users\Karoo\191720eb-gr22-repo\Projekt\IcyTowerGame\x64\Debug\IcyTowerGame.exe
+  Object.cpp
+C:\Users\Karoo\My_projects\IcyTowerGame\Object.cpp(21,11): warning C4244: "=": konwersja z "double" do "float", możliwa utrata danych
+  Platform.cpp
+C:\Users\Karoo\My_projects\IcyTowerGame\Platform.cpp(8,23): warning C4244: "argument": konwersja z "int" do "float", możliwa utrata danych
+C:\Users\Karoo\My_projects\IcyTowerGame\Platform.cpp(8,20): warning C4244: "argument": konwersja z "int" do "float", możliwa utrata danych
+C:\Users\Karoo\My_projects\IcyTowerGame\Platform.cpp(16,23): warning C4244: "argument": konwersja z "int" do "float", możliwa utrata danych
+C:\Users\Karoo\My_projects\IcyTowerGame\Platform.cpp(16,20): warning C4244: "argument": konwersja z "int" do "float", możliwa utrata danych
+C:\Users\Karoo\My_projects\IcyTowerGame\Platform.cpp(17,32): warning C4305: "argument": obcięcie z "double" do "float"
+C:\Users\Karoo\My_projects\IcyTowerGame\Platform.cpp(17,23): warning C4244: "argument": konwersja z "double" do "float", możliwa utrata danych
+C:\Users\Karoo\My_projects\IcyTowerGame\Platform.cpp(58,39): warning C4305: "argument": obcięcie z "double" do "float"
+C:\Users\Karoo\My_projects\IcyTowerGame\Platform.cpp(97,8): warning C4244: "inicjowanie": konwersja z "float" do "int", możliwa utrata danych
+C:\Users\Karoo\My_projects\IcyTowerGame\Platform.cpp(110,16): warning C4244: "inicjowanie": konwersja z "T" do "int", możliwa utrata danych
+C:\Users\Karoo\My_projects\IcyTowerGame\Platform.cpp(110,16): warning C4244:         with
+C:\Users\Karoo\My_projects\IcyTowerGame\Platform.cpp(110,16): warning C4244:         [
+C:\Users\Karoo\My_projects\IcyTowerGame\Platform.cpp(110,16): warning C4244:             T=float
+C:\Users\Karoo\My_projects\IcyTowerGame\Platform.cpp(110,16): warning C4244:         ]
+C:\Users\Karoo\My_projects\IcyTowerGame\Platform.cpp(111,15): warning C4244: "inicjowanie": konwersja z "const T" do "int", możliwa utrata danych
+C:\Users\Karoo\My_projects\IcyTowerGame\Platform.cpp(111,15): warning C4244:         with
+C:\Users\Karoo\My_projects\IcyTowerGame\Platform.cpp(111,15): warning C4244:         [
+C:\Users\Karoo\My_projects\IcyTowerGame\Platform.cpp(111,15): warning C4244:             T=float
+C:\Users\Karoo\My_projects\IcyTowerGame\Platform.cpp(111,15): warning C4244:         ]
+  Player.cpp
+C:\Users\Karoo\My_projects\IcyTowerGame\Player.cpp(10,22): warning C4305: "argument": obcięcie z "double" do "float"
+C:\Users\Karoo\My_projects\IcyTowerGame\Player.cpp(10,17): warning C4305: "argument": obcięcie z "double" do "float"
+C:\Users\Karoo\My_projects\IcyTowerGame\Player.cpp(28,18): warning C4244: "+=": konwersja z "double" do "T", możliwa utrata danych
+C:\Users\Karoo\My_projects\IcyTowerGame\Player.cpp(28,18): warning C4244:         with
+C:\Users\Karoo\My_projects\IcyTowerGame\Player.cpp(28,18): warning C4244:         [
+C:\Users\Karoo\My_projects\IcyTowerGame\Player.cpp(28,18): warning C4244:             T=float
+C:\Users\Karoo\My_projects\IcyTowerGame\Player.cpp(28,18): warning C4244:         ]
+C:\Users\Karoo\My_projects\IcyTowerGame\Player.cpp(30,24): warning C4244: "+=": konwersja z "double" do "T", możliwa utrata danych
+C:\Users\Karoo\My_projects\IcyTowerGame\Player.cpp(30,24): warning C4244:         with
+C:\Users\Karoo\My_projects\IcyTowerGame\Player.cpp(30,24): warning C4244:         [
+C:\Users\Karoo\My_projects\IcyTowerGame\Player.cpp(30,24): warning C4244:             T=float
+C:\Users\Karoo\My_projects\IcyTowerGame\Player.cpp(30,24): warning C4244:         ]
+C:\Users\Karoo\My_projects\IcyTowerGame\Player.cpp(35,18): warning C4244: "+=": konwersja z "double" do "T", możliwa utrata danych
+C:\Users\Karoo\My_projects\IcyTowerGame\Player.cpp(35,18): warning C4244:         with
+C:\Users\Karoo\My_projects\IcyTowerGame\Player.cpp(35,18): warning C4244:         [
+C:\Users\Karoo\My_projects\IcyTowerGame\Player.cpp(35,18): warning C4244:             T=float
+C:\Users\Karoo\My_projects\IcyTowerGame\Player.cpp(35,18): warning C4244:         ]
+C:\Users\Karoo\My_projects\IcyTowerGame\Player.cpp(37,25): warning C4244: "+=": konwersja z "double" do "T", możliwa utrata danych
+C:\Users\Karoo\My_projects\IcyTowerGame\Player.cpp(37,25): warning C4244:         with
+C:\Users\Karoo\My_projects\IcyTowerGame\Player.cpp(37,25): warning C4244:         [
+C:\Users\Karoo\My_projects\IcyTowerGame\Player.cpp(37,25): warning C4244:             T=float
+C:\Users\Karoo\My_projects\IcyTowerGame\Player.cpp(37,25): warning C4244:         ]
+C:\Users\Karoo\My_projects\IcyTowerGame\Player.cpp(40,17): warning C4305: "*=": obcięcie z "double" do "T"
+C:\Users\Karoo\My_projects\IcyTowerGame\Player.cpp(40,17): warning C4305:         with
+C:\Users\Karoo\My_projects\IcyTowerGame\Player.cpp(40,17): warning C4305:         [
+C:\Users\Karoo\My_projects\IcyTowerGame\Player.cpp(40,17): warning C4305:             T=float
+C:\Users\Karoo\My_projects\IcyTowerGame\Player.cpp(40,17): warning C4305:         ]
+C:\Users\Karoo\My_projects\IcyTowerGame\Player.cpp(42,17): warning C4305: "*=": obcięcie z "double" do "T"
+C:\Users\Karoo\My_projects\IcyTowerGame\Player.cpp(42,17): warning C4305:         with
+C:\Users\Karoo\My_projects\IcyTowerGame\Player.cpp(42,17): warning C4305:         [
+C:\Users\Karoo\My_projects\IcyTowerGame\Player.cpp(42,17): warning C4305:             T=float
+C:\Users\Karoo\My_projects\IcyTowerGame\Player.cpp(42,17): warning C4305:         ]
+C:\Users\Karoo\My_projects\IcyTowerGame\Player.cpp(47,16): warning C4244: "=": konwersja z "double" do "T", możliwa utrata danych
+C:\Users\Karoo\My_projects\IcyTowerGame\Player.cpp(47,16): warning C4244:         with
+C:\Users\Karoo\My_projects\IcyTowerGame\Player.cpp(47,16): warning C4244:         [
+C:\Users\Karoo\My_projects\IcyTowerGame\Player.cpp(47,16): warning C4244:             T=float
+C:\Users\Karoo\My_projects\IcyTowerGame\Player.cpp(47,16): warning C4244:         ]
+C:\Users\Karoo\My_projects\IcyTowerGame\Player.cpp(58,21): warning C4244: "argument": konwersja z "int" do "float", możliwa utrata danych
+C:\Users\Karoo\My_projects\IcyTowerGame\Player.cpp(60,17): warning C4244: "=": konwersja z "double" do "T", możliwa utrata danych
+C:\Users\Karoo\My_projects\IcyTowerGame\Player.cpp(60,17): warning C4244:         with
+C:\Users\Karoo\My_projects\IcyTowerGame\Player.cpp(60,17): warning C4244:         [
+C:\Users\Karoo\My_projects\IcyTowerGame\Player.cpp(60,17): warning C4244:             T=float
+C:\Users\Karoo\My_projects\IcyTowerGame\Player.cpp(60,17): warning C4244:         ]
+C:\Users\Karoo\My_projects\IcyTowerGame\Player.cpp(65,21): warning C4244: "argument": konwersja z "int" do "float", możliwa utrata danych
+C:\Users\Karoo\My_projects\IcyTowerGame\Player.cpp(67,17): warning C4244: "=": konwersja z "double" do "T", możliwa utrata danych
+C:\Users\Karoo\My_projects\IcyTowerGame\Player.cpp(67,17): warning C4244:         with
+C:\Users\Karoo\My_projects\IcyTowerGame\Player.cpp(67,17): warning C4244:         [
+C:\Users\Karoo\My_projects\IcyTowerGame\Player.cpp(67,17): warning C4244:             T=float
+C:\Users\Karoo\My_projects\IcyTowerGame\Player.cpp(67,17): warning C4244:         ]
+C:\Users\Karoo\My_projects\IcyTowerGame\Player.cpp(158,15): warning C4244: "inicjowanie": konwersja z "const T" do "int", możliwa utrata danych
+C:\Users\Karoo\My_projects\IcyTowerGame\Player.cpp(158,15): warning C4244:         with
+C:\Users\Karoo\My_projects\IcyTowerGame\Player.cpp(158,15): warning C4244:         [
+C:\Users\Karoo\My_projects\IcyTowerGame\Player.cpp(158,15): warning C4244:             T=float
+C:\Users\Karoo\My_projects\IcyTowerGame\Player.cpp(158,15): warning C4244:         ]
+C:\Users\Karoo\My_projects\IcyTowerGame\Player.cpp(159,16): warning C4244: "inicjowanie": konwersja z "T" do "int", możliwa utrata danych
+C:\Users\Karoo\My_projects\IcyTowerGame\Player.cpp(159,16): warning C4244:         with
+C:\Users\Karoo\My_projects\IcyTowerGame\Player.cpp(159,16): warning C4244:         [
+C:\Users\Karoo\My_projects\IcyTowerGame\Player.cpp(159,16): warning C4244:             T=float
+C:\Users\Karoo\My_projects\IcyTowerGame\Player.cpp(159,16): warning C4244:         ]
+C:\Users\Karoo\My_projects\IcyTowerGame\Player.cpp(160,10): warning C4244: "inicjowanie": konwersja z "T" do "int", możliwa utrata danych
+C:\Users\Karoo\My_projects\IcyTowerGame\Player.cpp(160,10): warning C4244:         with
+C:\Users\Karoo\My_projects\IcyTowerGame\Player.cpp(160,10): warning C4244:         [
+C:\Users\Karoo\My_projects\IcyTowerGame\Player.cpp(160,10): warning C4244:             T=float
+C:\Users\Karoo\My_projects\IcyTowerGame\Player.cpp(160,10): warning C4244:         ]
+C:\Users\Karoo\My_projects\IcyTowerGame\Player.cpp(161,13): warning C4244: "inicjowanie": konwersja z "const T" do "int", możliwa utrata danych
+C:\Users\Karoo\My_projects\IcyTowerGame\Player.cpp(161,13): warning C4244:         with
+C:\Users\Karoo\My_projects\IcyTowerGame\Player.cpp(161,13): warning C4244:         [
+C:\Users\Karoo\My_projects\IcyTowerGame\Player.cpp(161,13): warning C4244:             T=float
+C:\Users\Karoo\My_projects\IcyTowerGame\Player.cpp(161,13): warning C4244:         ]
+  Score.cpp
+C:\Users\Karoo\My_projects\IcyTowerGame\Score.cpp(103,36): warning C4244: "argument": konwersja z "int" do "float", możliwa utrata danych
+  Generowanie kodu...
+C:\Users\Karoo\My_projects\IcyTowerGame\Display.cpp(474,1): warning C4715: "Display::enterNickname”: niewszystkie ścieżki kodu zwracają wartość
+  IcyTowerGame.vcxproj -> C:\Users\Karoo\My_projects\IcyTowerGame\x64\Debug\IcyTowerGame.exe

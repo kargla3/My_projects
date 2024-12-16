@@ -5,14 +5,14 @@
         {
             "primary-output": "IcyTowerGame\\x64\\Debug\\Paths.ixx.obj",
             "outputs": [
-                "C:\\Users\\Karoo\\191720eb-gr22-repo\\Projekt\\IcyTowerGame\\IcyTowerGame\\x64\\Debug\\vc143.pdb",
+                "C:\\Users\\Karoo\\My_projects\\IcyTowerGame\\IcyTowerGame\\x64\\Debug\\vc143.pdb",
                 "IcyTowerGame\\x64\\Debug\\",
-                "C:\\Users\\Karoo\\191720eb-gr22-repo\\Projekt\\IcyTowerGame\\IcyTowerGame\\x64\\Debug\\Paths.ixx.ifc"
+                "C:\\Users\\Karoo\\My_projects\\IcyTowerGame\\IcyTowerGame\\x64\\Debug\\Paths.ixx.ifc"
             ],
             "provides": [
                 {
                     "logical-name": "Paths",
-                    "source-path": "c:\\users\\karoo\\191720eb-gr22-repo\\projekt\\icytowergame\\paths.ixx",
+                    "source-path": "c:\\users\\karoo\\my_projects\\icytowergame\\paths.ixx",
                     "is-interface": true
                 }
             ],
