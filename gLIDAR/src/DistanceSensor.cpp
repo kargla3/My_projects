@@ -8,6 +8,9 @@ DistanceSensor::DistanceSensor(int RX, int TX, HardwareSerial &serial) : sensorS
 Point DistanceSensor::receiveData()
 {
     Point point;
+    
+    while(!sensorSerial.available()) {}
+
     if (sensorSerial.available() >= 9)
     {
         uint8_t buffer[9];
@@ -20,6 +23,7 @@ Point DistanceSensor::receiveData()
         {
             double distance = buffer[2] + (buffer[3] << 8);
             double strength = buffer[4] + (buffer[5] << 8);
+
             uint8_t checksum = 0;
 
             for (int i = 0; i < 8; i++)
@@ -42,25 +46,30 @@ Point DistanceSensor::receiveData()
     return point;
 }
 
-void DistanceSensor::collectData(Motor motor)
+void DistanceSensor::collectData(Motor motor, int numRecords)
 {
     if (motor.getAngle() != 0)
     {
-        Point point = receiveData();
-        point.setAngle(motor.getAngle());
+        float motorAngle = motor.getAngle();
+        float stepPerRecord = 413.7 / numRecords;
+        float tolerance = 0.9;
+        if (fmod(motorAngle, stepPerRecord) < tolerance) {
+            Point point = this->receiveData();
+            point.setAngle(motor.getAngle());
 
-        // Start bit + jakość
-        uint8_t quality = static_cast<uint8_t>(std::round(std::min(point.getStrength(), 63.0))); // Skala 0–63
-        uint8_t start_bit_quality = (0b11 << 6) | quality;
+            // Start bit + jakość
+            uint8_t quality = static_cast<uint8_t>(std::round(std::min(point.getStrength(), 63.0))); // Skala 0–63
+            uint8_t start_bit_quality = (0b11 << 6) | quality;
 
-        // Kąt w jednostkach 1/64°
-        uint16_t angle_q6 = static_cast<uint16_t>(std::round(point.getAngle() * 0.87 * 64)) % (360 * 64);
+            // Kąt w jednostkach 1/64°
+            uint16_t angle_q6 = static_cast<uint16_t>(std::round(point.getAngle() * 0.87019579 * 64)) % (360 * 64);
 
-        // Odległość w jednostkach 1/4 mm
-        uint16_t distance_q2 = static_cast<uint16_t>(std::round(point.getDistance() * 4));
+            // Odległość w jednostkach 1/4 mm
+            uint16_t distance_q2 = static_cast<uint16_t>(std::round(point.getDistance() * 4));
 
-        String toAdd = " " + String(start_bit_quality) + " " + String(angle_q6) + " " + String(distance_q2);
-        data += toAdd;
+            String toAdd = " " + String(start_bit_quality) + " " + String(angle_q6) + " " + String(distance_q2);
+            data += toAdd;
+        }
     } 
     else
     {

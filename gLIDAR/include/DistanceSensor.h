@@ -12,7 +12,7 @@ class DistanceSensor {
 public:
     DistanceSensor(int RX, int TX, HardwareSerial& serial);
     Point receiveData();
-    void collectData(Motor motor);
+    void collectData(Motor motor, int numRecords);
     String getData();
 };
 
