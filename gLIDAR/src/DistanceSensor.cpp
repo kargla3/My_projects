@@ -3,16 +3,23 @@
 DistanceSensor::DistanceSensor(int RX, int TX, HardwareSerial &serial) : sensorSerial(serial)
 {
     sensorSerial.begin(115200, SERIAL_8N1, RX, TX);
+    // byte setBaudRate[] = {0x5A, 0x08, 0x06, 0x00, 0x08, 0x07, 0x00, 0x00};
+    // sensorSerial.write(setBaudRate, sizeof(setBaudRate));
+    // delay(100);
+    // sensorSerial.updateBaudRate(460800);
+    // delay(100);
+    // byte setFrameRate[] = {0x5A, 0x06, 0x03, 0xF4, 0x00, 0x5D};
+    // sensorSerial.write(setFrameRate, sizeof(setFrameRate));
 }
 
 Point DistanceSensor::receiveData()
 {
     Point point;
-    
     while(!sensorSerial.available()) {}
 
     if (sensorSerial.available() >= 9)
     {
+        //Serial.println(sensorSerial.available());
         uint8_t buffer[9];
         for (int i = 0; i < 9; i++)
         {
@@ -23,6 +30,7 @@ Point DistanceSensor::receiveData()
         {
             double distance = buffer[2] + (buffer[3] << 8);
             double strength = buffer[4] + (buffer[5] << 8);
+            Serial.println(distance);
 
             uint8_t checksum = 0;
 

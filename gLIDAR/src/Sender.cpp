@@ -4,7 +4,7 @@ Sender::Sender() {}
 
 void Sender::begin(String ssid, String password, int WiFiport)
 {
-    Serial.begin(115200);
+    Serial.begin(921600);
     WiFi.mode(WIFI_AP);
     WiFi.softAP(ssid, password);
     port = WiFiport;
@@ -62,6 +62,6 @@ void Sender::sendParameters(String data)
             else
                 Serial.println("Error in sending data");
         }
-    else
-        Serial.println(data);
+    // else
+    //     Serial.println(data);
 }
