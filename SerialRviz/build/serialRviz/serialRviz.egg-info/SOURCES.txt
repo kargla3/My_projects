@@ -1,0 +1,17 @@
+LICENSE
+package.xml
+setup.cfg
+setup.py
+../../build/serialRviz/serialRviz.egg-info/PKG-INFO
+../../build/serialRviz/serialRviz.egg-info/SOURCES.txt
+../../build/serialRviz/serialRviz.egg-info/dependency_links.txt
+../../build/serialRviz/serialRviz.egg-info/entry_points.txt
+../../build/serialRviz/serialRviz.egg-info/requires.txt
+../../build/serialRviz/serialRviz.egg-info/top_level.txt
+../../build/serialRviz/serialRviz.egg-info/zip-safe
+resource/serialRviz
+serialRviz/__init__.py
+serialRviz/serial_rviz.py
+test/test_copyright.py
+test/test_flake8.py
+test/test_pep257.py

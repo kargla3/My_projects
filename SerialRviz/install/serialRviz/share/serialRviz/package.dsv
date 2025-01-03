@@ -1,0 +1,9 @@
+source;share/serialRviz/hook/cmake_prefix_path.ps1
+source;share/serialRviz/hook/cmake_prefix_path.dsv
+source;share/serialRviz/hook/cmake_prefix_path.sh
+source;share/serialRviz/hook/pythonpath.ps1
+source;share/serialRviz/hook/pythonpath.dsv
+source;share/serialRviz/hook/pythonpath.sh
+source;share/serialRviz/hook/ament_prefix_path.ps1
+source;share/serialRviz/hook/ament_prefix_path.dsv
+source;share/serialRviz/hook/ament_prefix_path.sh

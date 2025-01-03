@@ -15,8 +15,7 @@ DistanceSensor::DistanceSensor(int RX, int TX, HardwareSerial &serial) : sensorS
 Point DistanceSensor::receiveData()
 {
     Point point;
-    while(!sensorSerial.available());
-    //Serial.println("Available: " + String(sensorSerial.available()));
+    //while(!sensorSerial.available());
     if (sensorSerial.available() >= 9)
     {
         uint8_t buffer[9];
@@ -25,7 +24,6 @@ Point DistanceSensor::receiveData()
             do{
                 buffer[i] = sensorSerial.read();
             } while(buffer[0] != 0x59);
-            //buffer[i] = sensorSerial.read();
         }
 
         if (buffer[0] == 0x59 && buffer[1] == 0x59)
@@ -44,7 +42,6 @@ Point DistanceSensor::receiveData()
             {
                 point.setDistance(distance);
                 point.setStrength(strength);
-                Serial.println("Distance: " + String(distance) + " cm");
                 return point;
             }
             else
@@ -77,13 +74,15 @@ void DistanceSensor::collectData(Motor motor, int numRecords)
             // Odległość w jednostkach 1/4 mm
             uint16_t distance_q2 = static_cast<uint16_t>(std::round(point.getDistance() * 4));
 
-            String toAdd = " " + String(start_bit_quality) + " " + String(angle_q6) + " " + String(distance_q2);
+            //String toAdd = " " + String(start_bit_quality) + " " + String(angle_q6) + " " + String(distance_q2);
+            String toAdd = " " + String(point.getDistance());
             data += toAdd;
         }
     } 
     else
     {
-        data = "0xA5 0x81";
+        data = "";
+        //data = "0xA5 0x81";
     }
 }
 

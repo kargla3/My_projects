@@ -8,7 +8,8 @@
 
 class DistanceSensor {
     HardwareSerial& sensorSerial;
-    String data = "0xA5 0x81";
+    //String data = "0xA5 0x81";
+    String data = "";
 public:
     DistanceSensor(int RX, int TX, HardwareSerial& serial);
     Point receiveData();

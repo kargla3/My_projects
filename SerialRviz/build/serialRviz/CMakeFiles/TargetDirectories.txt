@@ -1,0 +1,10 @@
+/home/kargla/SerialRviz/build/serialRviz/CMakeFiles/uninstall.dir
+/home/kargla/SerialRviz/build/serialRviz/CMakeFiles/serialRviz_uninstall.dir
+/home/kargla/SerialRviz/build/serialRviz/CMakeFiles/serialRviz.dir
+/home/kargla/SerialRviz/build/serialRviz/CMakeFiles/test.dir
+/home/kargla/SerialRviz/build/serialRviz/CMakeFiles/edit_cache.dir
+/home/kargla/SerialRviz/build/serialRviz/CMakeFiles/rebuild_cache.dir
+/home/kargla/SerialRviz/build/serialRviz/CMakeFiles/list_install_components.dir
+/home/kargla/SerialRviz/build/serialRviz/CMakeFiles/install.dir
+/home/kargla/SerialRviz/build/serialRviz/CMakeFiles/install/local.dir
+/home/kargla/SerialRviz/build/serialRviz/CMakeFiles/install/strip.dir

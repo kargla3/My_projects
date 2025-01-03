@@ -1,0 +1,4 @@
+source;share/serialRviz/local_setup.bash
+source;share/serialRviz/local_setup.dsv
+source;share/serialRviz/local_setup.sh
+source;share/serialRviz/local_setup.zsh

@@ -1,0 +1,33 @@
+running egg_info
+creating ../../build/serialRviz/serialRviz.egg-info
+writing ../../build/serialRviz/serialRviz.egg-info/PKG-INFO
+writing dependency_links to ../../build/serialRviz/serialRviz.egg-info/dependency_links.txt
+writing entry points to ../../build/serialRviz/serialRviz.egg-info/entry_points.txt
+writing requirements to ../../build/serialRviz/serialRviz.egg-info/requires.txt
+writing top-level names to ../../build/serialRviz/serialRviz.egg-info/top_level.txt
+writing manifest file '../../build/serialRviz/serialRviz.egg-info/SOURCES.txt'
+reading manifest file '../../build/serialRviz/serialRviz.egg-info/SOURCES.txt'
+adding license file 'LICENSE'
+writing manifest file '../../build/serialRviz/serialRviz.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/kargla/SerialRviz/build/serialRviz/build
+creating /home/kargla/SerialRviz/build/serialRviz/build/lib
+creating /home/kargla/SerialRviz/build/serialRviz/build/lib/serialRviz
+copying serialRviz/__init__.py -> /home/kargla/SerialRviz/build/serialRviz/build/lib/serialRviz
+copying serialRviz/serial_rviz.py -> /home/kargla/SerialRviz/build/serialRviz/build/lib/serialRviz
+running install
+running install_lib
+creating /home/kargla/SerialRviz/install/serialRviz/lib/python3.10/site-packages/serialRviz
+copying /home/kargla/SerialRviz/build/serialRviz/build/lib/serialRviz/__init__.py -> /home/kargla/SerialRviz/install/serialRviz/lib/python3.10/site-packages/serialRviz
+copying /home/kargla/SerialRviz/build/serialRviz/build/lib/serialRviz/serial_rviz.py -> /home/kargla/SerialRviz/install/serialRviz/lib/python3.10/site-packages/serialRviz
+byte-compiling /home/kargla/SerialRviz/install/serialRviz/lib/python3.10/site-packages/serialRviz/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/kargla/SerialRviz/install/serialRviz/lib/python3.10/site-packages/serialRviz/serial_rviz.py to serial_rviz.cpython-310.pyc
+running install_data
+copying resource/serialRviz -> /home/kargla/SerialRviz/install/serialRviz/share/ament_index/resource_index/packages
+copying package.xml -> /home/kargla/SerialRviz/install/serialRviz/share/serialRviz
+running install_egg_info
+Copying ../../build/serialRviz/serialRviz.egg-info to /home/kargla/SerialRviz/install/serialRviz/lib/python3.10/site-packages/serialRviz-0.0.0-py3.10.egg-info
+running install_scripts
+Installing serial_rviz script to /home/kargla/SerialRviz/install/serialRviz/lib/serialRviz
+writing list of installed files to '/home/kargla/SerialRviz/build/serialRviz/install.log'

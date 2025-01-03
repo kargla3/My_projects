@@ -1,0 +1,39 @@
+[0.014s] Invoking command in '/home/kargla/SerialRviz/build/serialRviz': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/kargla/SerialRviz/build/serialRviz -- -j12 -l12
+[0.036s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.153s] -- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)
+[0.208s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.214s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.225s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.241s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.260s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.314s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.318s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.442s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.471s] -- Found FastRTPS: /opt/ros/humble/include  
+[0.514s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.525s] -- Looking for pthread.h
+[0.606s] -- Looking for pthread.h - found
+[0.606s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.687s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[0.688s] -- Found Threads: TRUE  
+[0.757s] [31mCMake Error at CMakeLists.txt:11 (find_package):
+[0.757s]   By not providing "Findserial.cmake" in CMAKE_MODULE_PATH this project has
+[0.757s]   asked CMake to find a package configuration file provided by "serial", but
+[0.758s]   CMake did not find one.
+[0.758s] 
+[0.758s]   Could not find a package configuration file provided by "serial" with any
+[0.758s]   of the following names:
+[0.758s] 
+[0.758s]     serialConfig.cmake
+[0.758s]     serial-config.cmake
+[0.758s] 
+[0.758s]   Add the installation prefix of "serial" to CMAKE_PREFIX_PATH or set
+[0.759s]   "serial_DIR" to a directory containing one of the above files.  If "serial"
+[0.759s]   provides a separate development package or SDK, be sure it has been
+[0.759s]   installed.
+[0.759s] 
+[0.759s] [0m
+[0.759s] -- Configuring incomplete, errors occurred!
+[0.759s] See also "/home/kargla/SerialRviz/build/serialRviz/CMakeFiles/CMakeOutput.log".
+[0.763s] gmake: *** [Makefile:267: cmake_check_build_system] Error 1
+[0.766s] Invoked command in '/home/kargla/SerialRviz/build/serialRviz' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/kargla/SerialRviz/build/serialRviz -- -j12 -l12

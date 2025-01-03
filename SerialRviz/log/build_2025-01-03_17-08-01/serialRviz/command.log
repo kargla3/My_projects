@@ -1,0 +1,4 @@
+Invoking command in '/home/kargla/SerialRviz/build/serialRviz': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/kargla/SerialRviz/build/serialRviz -- -j12 -l12
+Invoked command in '/home/kargla/SerialRviz/build/serialRviz' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/kargla/SerialRviz/build/serialRviz -- -j12 -l12
+Invoking command in '/home/kargla/SerialRviz/build/serialRviz': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/kargla/SerialRviz/build/serialRviz
+Invoked command in '/home/kargla/SerialRviz/build/serialRviz' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/kargla/SerialRviz/build/serialRviz

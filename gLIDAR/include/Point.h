@@ -2,7 +2,7 @@
 #define POINT_H
 
 class Point {
-    double distance = 0;
+    int distance = 0;
     double strength = 0;
     double angle = 0;
 
@@ -12,7 +12,7 @@ public:
     void setStrength(double strength);
     void setAngle(double angle);
 
-    double getDistance();
+    int getDistance();
     double getStrength();
     double getAngle();
 };

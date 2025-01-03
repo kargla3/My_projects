@@ -1,0 +1,25 @@
+[0.518s] Invoking command in '/home/kargla/SerialRviz/src/serialRviz': PYTHONPATH=/home/kargla/SerialRviz/build/serialRviz/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/kargla/SerialRviz/install/serialRviz/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/serialRviz build --build-base /home/kargla/SerialRviz/build/serialRviz/build install --record /home/kargla/SerialRviz/build/serialRviz/install.log --single-version-externally-managed install_data
+[0.711s] running egg_info
+[0.711s] writing ../../build/serialRviz/serialRviz.egg-info/PKG-INFO
+[0.711s] writing dependency_links to ../../build/serialRviz/serialRviz.egg-info/dependency_links.txt
+[0.711s] writing entry points to ../../build/serialRviz/serialRviz.egg-info/entry_points.txt
+[0.712s] writing requirements to ../../build/serialRviz/serialRviz.egg-info/requires.txt
+[0.712s] writing top-level names to ../../build/serialRviz/serialRviz.egg-info/top_level.txt
+[0.713s] reading manifest file '../../build/serialRviz/serialRviz.egg-info/SOURCES.txt'
+[0.713s] adding license file 'LICENSE'
+[0.714s] writing manifest file '../../build/serialRviz/serialRviz.egg-info/SOURCES.txt'
+[0.714s] running build
+[0.714s] running build_py
+[0.714s] copying serialRviz/serial_rviz.py -> /home/kargla/SerialRviz/build/serialRviz/build/lib/serialRviz
+[0.714s] running install
+[0.714s] running install_lib
+[0.715s] copying /home/kargla/SerialRviz/build/serialRviz/build/lib/serialRviz/serial_rviz.py -> /home/kargla/SerialRviz/install/serialRviz/lib/python3.10/site-packages/serialRviz
+[0.716s] byte-compiling /home/kargla/SerialRviz/install/serialRviz/lib/python3.10/site-packages/serialRviz/serial_rviz.py to serial_rviz.cpython-310.pyc
+[0.716s] running install_data
+[0.717s] running install_egg_info
+[0.718s] removing '/home/kargla/SerialRviz/install/serialRviz/lib/python3.10/site-packages/serialRviz-0.0.0-py3.10.egg-info' (and everything under it)
+[0.718s] Copying ../../build/serialRviz/serialRviz.egg-info to /home/kargla/SerialRviz/install/serialRviz/lib/python3.10/site-packages/serialRviz-0.0.0-py3.10.egg-info
+[0.719s] running install_scripts
+[0.737s] Installing serial_rviz script to /home/kargla/SerialRviz/install/serialRviz/lib/serialRviz
+[0.738s] writing list of installed files to '/home/kargla/SerialRviz/build/serialRviz/install.log'
+[0.767s] Invoked command in '/home/kargla/SerialRviz/src/serialRviz' returned '0': PYTHONPATH=/home/kargla/SerialRviz/build/serialRviz/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/kargla/SerialRviz/install/serialRviz/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/serialRviz build --build-base /home/kargla/SerialRviz/build/serialRviz/build install --record /home/kargla/SerialRviz/build/serialRviz/install.log --single-version-externally-managed install_data

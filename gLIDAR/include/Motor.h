@@ -18,8 +18,9 @@ class Motor {
     int ms1_PIN;
     int ms2_PIN;
     bool full_revolution = false;
+    int offset = 500;
 public:
-    Motor(int step_PIN, int dir_PIN, int en_PIN);
+    Motor(int step_PIN, int dir_PIN, int en_PIN, int ms1_PIN, int ms2_PIN);
     double getAngle();
     void disable();
     void setDirection(bool dir);

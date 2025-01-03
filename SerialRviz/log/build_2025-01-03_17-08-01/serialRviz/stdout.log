@@ -1,0 +1,19 @@
+[35m[1mConsolidate compiler generated dependencies of target serialRviz[0m
+[100%] Built target serialRviz
+-- Install configuration: ""
+-- Up-to-date: /home/kargla/SerialRviz/install/serialRviz/lib/serialRviz/serialRviz
+-- Up-to-date: /home/kargla/SerialRviz/install/serialRviz/share/ament_index/resource_index/package_run_dependencies/serialRviz
+-- Up-to-date: /home/kargla/SerialRviz/install/serialRviz/share/ament_index/resource_index/parent_prefix_path/serialRviz
+-- Up-to-date: /home/kargla/SerialRviz/install/serialRviz/share/serialRviz/environment/ament_prefix_path.sh
+-- Up-to-date: /home/kargla/SerialRviz/install/serialRviz/share/serialRviz/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/kargla/SerialRviz/install/serialRviz/share/serialRviz/environment/path.sh
+-- Up-to-date: /home/kargla/SerialRviz/install/serialRviz/share/serialRviz/environment/path.dsv
+-- Up-to-date: /home/kargla/SerialRviz/install/serialRviz/share/serialRviz/local_setup.bash
+-- Up-to-date: /home/kargla/SerialRviz/install/serialRviz/share/serialRviz/local_setup.sh
+-- Up-to-date: /home/kargla/SerialRviz/install/serialRviz/share/serialRviz/local_setup.zsh
+-- Up-to-date: /home/kargla/SerialRviz/install/serialRviz/share/serialRviz/local_setup.dsv
+-- Up-to-date: /home/kargla/SerialRviz/install/serialRviz/share/serialRviz/package.dsv
+-- Up-to-date: /home/kargla/SerialRviz/install/serialRviz/share/ament_index/resource_index/packages/serialRviz
+-- Up-to-date: /home/kargla/SerialRviz/install/serialRviz/share/serialRviz/cmake/serialRvizConfig.cmake
+-- Up-to-date: /home/kargla/SerialRviz/install/serialRviz/share/serialRviz/cmake/serialRvizConfig-version.cmake
+-- Up-to-date: /home/kargla/SerialRviz/install/serialRviz/share/serialRviz/package.xml

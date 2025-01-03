@@ -1,0 +1,52 @@
+[0.013s] Invoking command in '/home/kargla/SerialRviz/build/serialRviz': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/kargla/SerialRviz/src/serialRviz -DCMAKE_INSTALL_PREFIX=/home/kargla/SerialRviz/install/serialRviz
+[0.107s] -- The C compiler identification is GNU 11.4.0
+[0.188s] -- The CXX compiler identification is GNU 11.4.0
+[0.199s] -- Detecting C compiler ABI info
+[0.292s] -- Detecting C compiler ABI info - done
+[0.300s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.300s] -- Detecting C compile features
+[0.301s] -- Detecting C compile features - done
+[0.306s] -- Detecting CXX compiler ABI info
+[0.394s] -- Detecting CXX compiler ABI info - done
+[0.401s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.402s] -- Detecting CXX compile features
+[0.402s] -- Detecting CXX compile features - done
+[0.406s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.559s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.664s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.715s] WARNING: Package name "serialRviz" does not follow the naming conventions. It should start with a lower case letter and only contain lower case letters, digits, underscores, and dashes.
+[0.748s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.749s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/kargla/SerialRviz/src/serialRviz/include>
+[0.749s] -- Configured cppcheck exclude dirs and/or files: 
+[0.749s] -- Added test 'lint_cmake' to check CMake code style
+[0.750s] -- Added test 'uncrustify' to check C / C++ code style
+[0.750s] -- Configured uncrustify additional arguments: 
+[0.751s] -- Added test 'xmllint' to check XML markup files
+[0.753s] -- Configuring done
+[0.757s] -- Generating done
+[0.759s] -- Build files have been written to: /home/kargla/SerialRviz/build/serialRviz
+[0.764s] Invoked command in '/home/kargla/SerialRviz/build/serialRviz' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/kargla/SerialRviz/src/serialRviz -DCMAKE_INSTALL_PREFIX=/home/kargla/SerialRviz/install/serialRviz
+[0.767s] Invoking command in '/home/kargla/SerialRviz/build/serialRviz': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/kargla/SerialRviz/build/serialRviz -- -j12 -l12
+[0.821s] [ 50%] [32mBuilding CXX object CMakeFiles/serialRviz.dir/src/serialRviz.cpp.o[0m
+[0.855s] [100%] [32m[1mLinking CXX executable serialRviz[0m
+[0.907s] [100%] Built target serialRviz
+[0.922s] Invoked command in '/home/kargla/SerialRviz/build/serialRviz' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/kargla/SerialRviz/build/serialRviz -- -j12 -l12
+[0.934s] Invoking command in '/home/kargla/SerialRviz/build/serialRviz': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/kargla/SerialRviz/build/serialRviz
+[0.942s] -- Install configuration: ""
+[0.942s] -- Installing: /home/kargla/SerialRviz/install/serialRviz/lib/serialRviz/serialRviz
+[0.942s] -- Installing: /home/kargla/SerialRviz/install/serialRviz/share/ament_index/resource_index/package_run_dependencies/serialRviz
+[0.942s] -- Installing: /home/kargla/SerialRviz/install/serialRviz/share/ament_index/resource_index/parent_prefix_path/serialRviz
+[0.943s] -- Installing: /home/kargla/SerialRviz/install/serialRviz/share/serialRviz/environment/ament_prefix_path.sh
+[0.943s] -- Installing: /home/kargla/SerialRviz/install/serialRviz/share/serialRviz/environment/ament_prefix_path.dsv
+[0.943s] -- Installing: /home/kargla/SerialRviz/install/serialRviz/share/serialRviz/environment/path.sh
+[0.943s] -- Installing: /home/kargla/SerialRviz/install/serialRviz/share/serialRviz/environment/path.dsv
+[0.943s] -- Installing: /home/kargla/SerialRviz/install/serialRviz/share/serialRviz/local_setup.bash
+[0.943s] -- Installing: /home/kargla/SerialRviz/install/serialRviz/share/serialRviz/local_setup.sh
+[0.944s] -- Installing: /home/kargla/SerialRviz/install/serialRviz/share/serialRviz/local_setup.zsh
+[0.944s] -- Installing: /home/kargla/SerialRviz/install/serialRviz/share/serialRviz/local_setup.dsv
+[0.944s] -- Installing: /home/kargla/SerialRviz/install/serialRviz/share/serialRviz/package.dsv
+[0.944s] -- Installing: /home/kargla/SerialRviz/install/serialRviz/share/ament_index/resource_index/packages/serialRviz
+[0.944s] -- Installing: /home/kargla/SerialRviz/install/serialRviz/share/serialRviz/cmake/serialRvizConfig.cmake
+[0.944s] -- Installing: /home/kargla/SerialRviz/install/serialRviz/share/serialRviz/cmake/serialRvizConfig-version.cmake
+[0.945s] -- Installing: /home/kargla/SerialRviz/install/serialRviz/share/serialRviz/package.xml
+[0.948s] Invoked command in '/home/kargla/SerialRviz/build/serialRviz' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/kargla/SerialRviz/build/serialRviz

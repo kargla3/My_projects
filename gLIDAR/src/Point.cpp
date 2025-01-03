@@ -14,7 +14,7 @@ void Point::setStrength(double strength) {
     this->strength = strength;
 }
 
-double Point::getDistance() {
+int Point::getDistance() {
     return distance;
 }
 

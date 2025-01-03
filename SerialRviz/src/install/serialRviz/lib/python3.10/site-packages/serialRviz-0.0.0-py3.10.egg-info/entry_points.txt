@@ -1,0 +1,3 @@
+[console_scripts]
+serial_rviz = serialRviz.serial_rviz:main
+
