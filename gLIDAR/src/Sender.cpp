@@ -62,6 +62,6 @@ void Sender::sendParameters(String data)
             else
                 Serial.println("Error in sending data");
         }
-    // else
-    //     Serial.println(data);
+    else
+        Serial.println(data);
 }

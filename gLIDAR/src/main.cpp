@@ -13,6 +13,7 @@ void setup() {
   sender.begin("gLIDAR", "12345678", 1234);
   motor.setDirection(1);
   motor.setVelocity(500);
+  //motor.disable();
 }
 
 void loop() {

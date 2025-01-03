@@ -13,6 +13,10 @@ double Motor::getAngle() {
     return angle;
 }
 
+void Motor::disable() {
+    digitalWrite(en_PIN, HIGH);
+}
+
 void Motor::setDirection(bool dir) {
     if(dir)
         digitalWrite(dir_PIN, HIGH);
