@@ -104,8 +104,8 @@ namespace BitmapConverter
                             bitmap = null;
                             break;
                     }
-                    ShowImageInWindow(bitmap);
-                    //ShowBitmapInWindow(outputBuffer);
+                    //ShowImageInWindow(bitmap);
+                    ShowBitmapInWindow(outputBuffer);
                     resultButton.Enabled = true;
                 }
             }
@@ -140,8 +140,8 @@ namespace BitmapConverter
                             bitmap = null;
                             break;
                     }
-                    ShowImageInWindow(bitmap);
-                    //ShowBitmapInWindow(outputBuffer);
+                    //ShowImageInWindow(bitmap);
+                    ShowBitmapInWindow(outputBuffer);
                     resultButton.Enabled = true;
                 }
             }

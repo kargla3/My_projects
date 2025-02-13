@@ -28,9 +28,9 @@ int ConvertCPP(char* inputPtr, char* outputPtr, int inputWidth, int inputHeight,
                 size_t bitIndex = (i * outputWidth + j) % 8;
                 uint8_t color = static_cast<uint8_t>((R + G + B) / 3);
                 if (color > 127)
-                    *outputPixel |= (1 << (bitIndex));
+                    *outputPixel |= (1 << (7 - bitIndex));
                 else
-                    *outputPixel &= ~(1 << (bitIndex));
+                    *outputPixel &= ~(1 << (7 - bitIndex));
             }
             else if (mode == 565) {
                 uint8_t* outputPixel = reinterpret_cast<uint8_t*>(outputPtr + (i * outputWidth + j) * 2);

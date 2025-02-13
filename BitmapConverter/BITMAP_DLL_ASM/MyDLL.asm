@@ -1,14 +1,26 @@
-.data
-byte_counter db 0
-current_byte db 0
-
 .CODE
 ; Funkcja ConvertASM
+; Odpowiedzialna za przeskalowanie obrazu wejsciowego, oraz konwersjê na odpowiedni styl (Monochromatyczny, RGB565, RGB888)
+;
+; Jako parametry wejœciowe przyjmuje:
+; InputPtr - wskaŸnik na tablice bajtów zdjêcia wejœciowego
+; OutputPtr - wskaŸnik na tablice bajtów zdjêcia wyjœciowego
+; inputWidth - szerokoœæ wejœciowa (int)
+; inputHeight - wysokoœæ wejœciowa (int)
+; outputWidth - szerokoœæ wyjœciowa (int)
+; outputHeight - wysokoœæ wyjœciowa (int)
+; mode - styl (int)
+;
+; Parametry wyjœciowe:
+; funkcja zapisuje wyniki w tablicy bajtów obrazu wyjœciowego (OutputPtr)
+;
+; Rejestry na których wykonywane s¹ operacje:
+; r8, r9, r10, r11, r12, r13, r14, rax, rbx, rcx, rdx, rsi, rdi, eax, ecx, edx, xmm0, xmm1, xmm2
 
 ConvertASM proc
-    push rsi
-    push rdi
-    push rbx
+    push rsi        ; Wrzuæ na stos wartoœæ RSi
+    push rdi        ; Wrzuæ na stos wartoœæ RDI
+    push rbx        ; Wrzuæ na stos wartoœæ RBX
 
     ;rsi - INPUTPTR
     ;rdi - OUTPUTPTR
@@ -20,45 +32,28 @@ ConvertASM proc
     mov r9, [rsp+72]   ; outputHeight (szósty argument)
     mov r10, [rsp+80]    ; mode (siódmy argument)
 
-    cmp r9, 0
-    je division_by_zero
-
     ; scaleX = inputWidth / outputWidth
-    ; Zamieñ inputWidth (rbx) na zmiennoprzecinkowy double i przechowaj w xmm0
     mov rax, r11                ; Przenieœ inputWidth do rax
     cvtsi2sd xmm0, rax          ; Konwertuj inputWidth (int) do double w xmm0
 
-    ; Zamieñ outputWidth (rsi) na zmiennoprzecinkowy double i przechowaj w xmm1
     mov rax, r8                ; Przenieœ outputWidth do rax
     cvtsi2sd xmm1, rax          ; Konwertuj outputWidth (int) do double w xmm1
 
-    ; Wykonaj dzielenie: scaleX = inputWidth / outputWidth
+    ; scaleX = inputWidth / outputWidth
     divsd xmm0, xmm1            ; xmm0 = xmm0 / xmm1 (inputWidth / outputWidth)
 
-    ; Zachowaj wynik w xmm1 (scaleX)
     movsd xmm1, xmm0            ; Zachowaj scaleX
 
     ; scaleY = inputHeight / outputHeight
-    ; Zamieñ inputHeight (rcx) na zmiennoprzecinkowy double i przechowaj w xmm0
     mov rax, rcx                ; Przenieœ inputHeight do rax
     cvtsi2sd xmm0, rax          ; Konwertuj inputHeight (int) do double w xmm0
 
-    ; Zamieñ outputHeight (rdi) na zmiennoprzecinkowy double i przechowaj w xmm2
     mov rax, r9                ; Przenieœ outputHeight do rax
     cvtsi2sd xmm2, rax          ; Konwertuj outputHeight (int) do double w xmm2
 
-    ; Wykonaj dzielenie: scaleY = inputHeight / outputHeight
     divsd xmm0, xmm2           ; xmm0 = xmm0 / xmm2 (inputHeight / outputHeight)
 
-    ; Zachowaj wynik w xmm2 (scaleY)
     movsd xmm2, xmm0            ; Zachowaj scaleY
-        
-    jmp calculate
-
-
-division_by_zero:
-    ; Obs³ugujemy przypadek dzielenia przez zero
-    mov r11, 0            ; Domyœlna wartoœæ, np. 0
 
 calculate:
     ; Pêtla przez wiersze obrazu wyjœciowego
@@ -92,11 +87,12 @@ inner_loop:
 
     imul rbx, 3            ; rdi *= 3 (przesuniêcie bajtowe dla RGB)
     
-    cmp r10, 0
-    je mono
+    cmp r10, 0             ; SprawdŸ czy wybrany tryb to Monochromatyczny
+    je mono                ; Skocz do obs³ugi trybu
 
-    cmp r10, 565
-    je _565
+    cmp r10, 565           ; SprawdŸ czy wybrany tryb to RGB565
+    je _565                ; Skocz do obs³ugi trybu
+                           ; W przeciwnym razie idŸ dalej (RGB888)
 
     ; Oblicz pozycjê w obrazie wyjœciowym
     mov rdi, r12                ; rdi = Youtput (indeks wiersza)
@@ -105,17 +101,17 @@ inner_loop:
     imul rdi, rdi, 3            ; rdi *= 3 (przesuniêcie bajtowe dla RGB)
 
     ; Pobierz wartoœci RGB z obrazu wejœciowego
-    movzx rax, byte ptr [rsi + rbx + 0]       ; rbx = wartoœæ R
+    movzx rax, byte ptr [rsi + rbx + 0]       ; rax = wartoœæ R
     movzx rcx, byte ptr [rsi + rbx + 1]   ; rcx = wartoœæ G
     movzx rdx, byte ptr [rsi + rbx + 2]   ; rdx = wartoœæ B
 
     ; Maluj piksel na odpowiedni kolor
-    mov byte ptr [r14 + rdi + 2], al      ; R
-    mov byte ptr [r14 + rdi + 1], cl   ; G 
-    mov byte ptr [r14 + rdi + 0], dl   ; B 
+    mov byte ptr [r14 + rdi + 2], al      ; Przenieœ do tablicy pod wskazany adres wartoœæ R
+    mov byte ptr [r14 + rdi + 1], cl      ; Przenieœ do tablicy pod wskazany adres wartoœæ G
+    mov byte ptr [r14 + rdi + 0], dl      ; Przenieœ do tablicy pod wskazany adres wartoœæ B
 
-    inc r13
-    jmp inner_loop
+    inc r13         ; Inkrementuj kolumne
+    jmp inner_loop      ; Skocz do pocz¹tku pêtli
 
 mono:
     movzx rax, byte ptr [rsi + rbx + 0]       ; rbx = wartoœæ R
@@ -123,43 +119,38 @@ mono:
     movzx rdx, byte ptr [rsi + rbx + 2]   ; rdx = wartoœæ B
 
     movzx eax, al       ; Przenieœ pierwszy bajt do EAX i wyzeruj górne bity
-    add eax, ecx
-    add eax, edx
+    add eax, ecx        ; Dodaj drugi bajt to EAX
+    add eax, edx        ; Dodaj trzeci bajt do EAX
     mov edx, 0          ; Wyzeruj górne bity (przygotowanie dla div)
     mov ecx, 3          ; Dzielnik = 3
     div ecx             ; EAX / ECX, wynik w EAX, reszta w EDX
 
-    ;oblicz pozycje w obrazie wyjsciowym
-    mov rdi, r12
-    imul rdi, r8
-    add rdi, r13
+    ; Oblicz pozycje w obrazie wyjsciowym
+    mov rdi, r12                ; rdi = Youtput (indeks wiersza)
+    imul rdi, r8                ; rdi = Youtput * outputWidth
+    add rdi, r13                ; rdi += Xoutput (indeks kolumny)
 
-    xor rdx, rdx
+    xor rdx, rdx                ; Wyzeruj RDX
     mov rdx, rdi                ; Skopiuj pozycjê bitow¹
     shr rdi, 3                  ; rdi = rdi / 8 (pozycja bajtu)
     and rdx, 7                  ; rdx = rdi % 8 (pozycja bitu)
 
-    ;mov rcx, 7
-    ;sub rcx, rdx                ; Odwróæ pozycjê bitu
-    ;mov rdx, rcx                ; Zapisz now¹ pozycjê bitu w rdx
+    mov ecx, 127                ; Za³aduj wartoœæ 127 do ECX
+    cmp eax, ecx                ; Porównaj wartoœæ w EAX z 127
+    jg average_greater          ; Skocz je¿eli jest wiêcej ni¿ 127
 
-
-    mov ecx, 127
-    cmp eax, ecx
-    jg average_greater
-
-    btr [r14 + rdi], rdx
-    jmp next_step
-
+    btr [r14 + rdi], rdx        ; Ustaw bit na 0
+    jmp next_step               ; Skocz do zakoñczenia pêtli
+        
 average_greater:
-    bts [r14 + rdi], rdx
-    jmp next_step
+    bts [r14 + rdi], rdx        ; Ustaw bit na 1
+    jmp next_step               ; Skocz do zakoñczenia pêtli
 
 _565:
-    mov rdi, r12
-    imul rdi, r8
-    add rdi, r13
-    imul rdi, rdi, 2
+    mov rdi, r12                ; rdi = Youtput (indeks wiersza)
+    imul rdi, r8                ; rdi = Youtput * outputWidth
+    add rdi, r13                ; rdi += Xoutput (indeks kolumny)
+    imul rdi, rdi, 2            ; Przemnó¿ adres wyjœciowy razy dwa (Jeden px reprezentowany przez 2 bajty)
 
     movzx rax, byte ptr [rsi + rbx + 0]   ; rbx = wartoœæ R
     movzx rcx, byte ptr [rsi + rbx + 1]   ; rcx = wartoœæ G
@@ -193,12 +184,9 @@ next_row:
 
 done:
     ; Zakoñczenie
-    movsd xmm0, xmm2
-    pop rbx
-    pop rdi
-    pop rsi
-
-
+    pop rbx         ; Pobierz ze stosu wartoœæ RBX
+    pop rdi         ; Pobierz ze stosu wartoœæ RDI
+    pop rsi         ; Pobierz ze stosu wartoœæ RSI
     ret
 ConvertASM endp
 END

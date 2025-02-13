@@ -9,5 +9,4 @@ C:\Users\Karoo\Robocze\BitmapConverter\BITMAP_DLL_CPP\MyDLL.cpp(17,24): warning 
   (kompilowanie pliku źródłowego „/MyDLL.cpp”)
   
   Generowanie kodu...
-     Trwa tworzenie biblioteki ..\BitmapConverter\bin\Debug\BITMAP_DLL_CPP.lib i obiektu ..\BitmapConverter\bin\Debug\BITMAP_DLL_CPP.exp
   BITMAP_DLL_CPP.vcxproj -> C:\Users\Karoo\Robocze\BitmapConverter\BitmapConverter\bin\Debug\BITMAP_DLL_CPP.dll
